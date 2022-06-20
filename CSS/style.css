@@ -6,39 +6,50 @@ body {
   font-family: "Nanum Gothic", sans-serif;
 }
 
-header {
-  background-color: #1378;
-}
-
-header .inner {
+.inner {
   position: relative;
   width: 1100px;
-  height: 120px;
   margin: 0 auto;
-  background-color: orange;
 }
 
-header .inner .logo {
+header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+header > .inner {
+  height: 120px;
+}
+
+header > .inner .logo {
   height: 75px;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  display: none;
 }
 
-header .inner .subMenu .menu {
+header > .inner .subMenu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header > .inner .subMenu .menu {
   font-family: Arial, Helvetica, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .inner .subMenu .menu li {
+header > .inner .subMenu .menu li {
   position: relative;
 }
 
-header .inner .subMenu .menu li::before {
+header > .inner .subMenu .menu li::before {
   content: "";
   width: 1px;
   height: 12px;
@@ -49,18 +60,136 @@ header .inner .subMenu .menu li::before {
   margin: auto;
 }
 
-header .inner .subMenu .menu li:first-child::before {
+header > .inner .subMenu .menu li:first-child::before {
   display: none;
 }
 
-header .inner .subMenu .menu a {
+header > .inner .subMenu .menu a {
   font-size: 12px;
   padding: 11px 16px;
   display: block;
   color: #656565;
 }
 
-header .inner .subMenu .menu a:hover {
+header > .inner .subMenu .menu a:hover {
   color: #000;
+}
+
+header > .inner .subMenu .search {
+  position: relative;
+  height: 34px;
+}
+
+header > .inner .subMenu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+header > .inner .subMenu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+
+header > .inner .subMenu .search .material-icons {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header > .inner .subMenu .search.focused .material-icons {
+  opacity: 0;
+}
+
+header > .inner .mainMenu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header > .inner .mainMenu .item:hover .itemName {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+
+header > .inner .mainMenu .item:hover .itemContents {
+  display: block;
+}
+
+header > .inner .mainMenu .item .itemName {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+header > .inner .mainMenu .item .itemContents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsMenu {
+  background-color: #2c2a29;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsMenu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsMenu > ul > li {
+  width: 220px;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsMenu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsMenu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsTexture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url("../images/main_menu_pattern.jpg");
+}
+
+header > .inner .mainMenu .item .itemContents .contentsTexture h4 {
+  color: #999;
+  font-weight: 700;
+}
+
+header > .inner .mainMenu .item .itemContents .contentsTexture p {
+  color: #669900;
+  margin: 4px 0 14px;
 }
 /*# sourceMappingURL=style.css.map */
