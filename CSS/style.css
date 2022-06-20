@@ -1,0 +1,66 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header {
+  background-color: #1378;
+}
+
+header .inner {
+  position: relative;
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: orange;
+}
+
+header .inner .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+
+header .inner .subMenu .menu {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .inner .subMenu .menu li {
+  position: relative;
+}
+
+header .inner .subMenu .menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .subMenu .menu li:first-child::before {
+  display: none;
+}
+
+header .inner .subMenu .menu a {
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+
+header .inner .subMenu .menu a:hover {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
