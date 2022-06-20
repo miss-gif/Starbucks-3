@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
+  height: 3000px;
 }
 
 .inner {
@@ -13,6 +14,9 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
 }
@@ -177,6 +181,10 @@ header > .inner .mainMenu .item .itemContents .contentsMenu > ul > li ul li {
   cursor: pointer;
 }
 
+header > .inner .mainMenu .item .itemContents .contentsMenu > ul > li ul li:hover {
+  color: #669900;
+}
+
 header > .inner .mainMenu .item .itemContents .contentsTexture {
   padding: 26px 0;
   font-size: 12px;
@@ -191,5 +199,20 @@ header > .inner .mainMenu .item .itemContents .contentsTexture h4 {
 header > .inner .mainMenu .item .itemContents .contentsTexture p {
   color: #669900;
   margin: 4px 0 14px;
+}
+
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
