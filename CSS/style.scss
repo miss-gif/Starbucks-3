@@ -13,6 +13,61 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+  &:hover {
+    color: #fff;
+    background-color: #333;
+  }
+}
+
+.btn.btn--reverse {
+  color: #fff;
+  background-color: #333;
+  &:hover {
+    background-color: transparent;
+    color: #333;
+  }
+}
+
+.btn.btn--brown {
+  color: #592b18;
+  // background-color: #592b18;
+  &:hover {
+    color: #fff;
+    background-color: #592b18;
+  }
+}
+
+.btn.btn--gold {
+  color: #d9aa8a;
+  // background-color: #d9aa8a;
+  &:hover {
+    color: #fff;
+    background-color: #d9aa8a;
+  }
+}
+
+.btn.btn--white {
+  color: #fff;
+  // background-color: #fff;
+  &:hover {
+    color: #333;
+    background-color: #fff;
+  }
+}
+
 // header
 header {
   position: fixed;
@@ -20,6 +75,7 @@ header {
   width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  z-index: 99;
   > .inner {
     height: 120px;
     .logo {
@@ -177,6 +233,55 @@ header {
       margin-bottom: 12px;
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
       cursor: pointer;
+    }
+  }
+}
+
+main {
+  .visual {
+    margin-top: 120px;
+    background-image: url("../images/visual_bg.jpg");
+    background-position: center;
+    .inner {
+      height: 646px;
+      .title {
+        position: absolute;
+        top: 88px;
+        left: -10px;
+        .btn {
+          position: absolute;
+          top: 259px;
+          left: 173px;
+        }
+      }
+      .cup1.image {
+        position: absolute;
+        bottom: 0;
+        right: -47px;
+      }
+      .cup1.text {
+        position: absolute;
+        top: 38px;
+        right: 171px;
+      }
+      .cup2.image {
+        position: absolute;
+        bottom: 0;
+        right: 162px;
+      }
+      .cup2.text {
+        position: absolute;
+        top: 321px;
+        right: 416px;
+      }
+      .spoon.image {
+        position: absolute;
+        bottom: 0;
+        left: 275px;
+      }
+    }
+    .fade-in {
+      opacity: 0;
     }
   }
 }
