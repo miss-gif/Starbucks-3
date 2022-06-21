@@ -75,3 +75,14 @@ var 프로모션 = new Swiper(".promotion .swiper-container", {
     nextEl: ".promotion .swiper-next",
   },
 });
+
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleBtn = document.querySelector(".toggle-promotion");
+
+promotionToggleBtn.addEventListener("click", function () {
+  if (promotionEl.classList.contains("hide")) {
+    promotionEl.classList.remove("hide");
+  } else {
+    promotionEl.classList.add("hide");
+  }
+});

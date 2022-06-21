@@ -43,7 +43,7 @@ body {
 
 .btn.btn--brown {
   color: #592b18;
-  // background-color: #592b18;
+  border-color: #592b18;
   &:hover {
     color: #fff;
     background-color: #592b18;
@@ -52,7 +52,7 @@ body {
 
 .btn.btn--gold {
   color: #d9aa8a;
-  // background-color: #d9aa8a;
+  border-color: #d9aa8a;
   &:hover {
     color: #fff;
     background-color: #d9aa8a;
@@ -61,7 +61,7 @@ body {
 
 .btn.btn--white {
   color: #fff;
-  // background-color: #fff;
+  border-color: #fff;
   &:hover {
     color: #333;
     background-color: #fff;
@@ -374,6 +374,8 @@ main {
       position: relative;
       height: 693px;
       background-color: #f6f5ef;
+      transition: height 0.4s;
+      overflow: hidden;
       .swiper-container {
         width: calc(819px * 3 + 20px);
         height: 553px;
@@ -447,6 +449,9 @@ main {
         right: 50%;
         margin-right: -480px;
       }
+    }
+    .promotion.hide {
+      height: 0;
     }
   }
 }

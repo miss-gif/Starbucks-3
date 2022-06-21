@@ -47,6 +47,7 @@ body {
 
 .btn.btn--brown {
   color: #592b18;
+  border: 2px solid #592b18;
 }
 
 .btn.btn--brown:hover {
@@ -463,6 +464,9 @@ main .notice .promotion {
   position: relative;
   height: 693px;
   background-color: #f6f5ef;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+  overflow: hidden;
 }
 
 main .notice .promotion .swiper-container {
@@ -555,5 +559,9 @@ main .notice .promotion .swiper-prev {
 main .notice .promotion .swiper-next {
   right: 50%;
   margin-right: -480px;
+}
+
+main .notice .promotion.hide {
+  height: 0;
 }
 /*# sourceMappingURL=style.css.map */
