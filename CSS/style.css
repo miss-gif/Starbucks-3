@@ -331,4 +331,189 @@ main .visual .inner .spoon.image {
 main .visual .fade-in {
   opacity: 0;
 }
+
+main .notice .noticeLine {
+  position: relative;
+}
+
+main .notice .noticeLine .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+
+main .notice .noticeLine .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5ef;
+}
+
+main .notice .noticeLine .inner {
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .notice .noticeLine .inner .inner-left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .notice .noticeLine .inner .inner-left h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+main .notice .noticeLine .inner .inner-left .swiper-container {
+  height: 62px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+}
+
+main .notice .noticeLine .inner .inner-left .swiper-container .swiper-wrapper .swiper-slide {
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .notice .noticeLine .inner .inner-left .swiper-container .swiper-wrapper .swiper-slide a {
+  color: #fff;
+}
+
+main .notice .noticeLine .inner .inner-left .notice-line_more {
+  width: 62px;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .notice .noticeLine .inner .inner-left .notice-line_more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+
+main .notice .noticeLine .inner .inner-right {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .notice .noticeLine .inner .inner-right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+main .notice .noticeLine .inner .inner-right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .notice .noticeLine .inner .inner-right .toggle-promotion .material-icons {
+  font-size: 30px;
+}
+
+main .notice .promotion {
+  position: relative;
+  height: 693px;
+  background-color: #f6f5ef;
+}
+
+main .notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+  overflow: hidden;
+}
+
+main .notice .promotion .swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+  opacity: 0.5;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+main .notice .promotion .swiper-container .swiper-wrapper .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+main .notice .promotion .swiper-container .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+
+main .notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+main .notice .promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background: url("../images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+
+main .notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+main .notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background: url("../images/promotion_slide_pager_on.png");
+}
 /*# sourceMappingURL=style.css.map */

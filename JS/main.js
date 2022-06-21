@@ -50,3 +50,28 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1,
   });
 });
+
+// new Swiper (선택자, 옵션)
+var 공지사항 = new Swiper(".noticeLine .swiper-container", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+});
+
+var 프로모션 = new Swiper(".promotion .swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  pagination: {
+    el: ".promotion .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".promotion .swiper-prev",
+    nextEl: ".promotion .swiper-next",
+  },
+});
