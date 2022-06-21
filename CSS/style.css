@@ -516,4 +516,44 @@ main .notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child 
 main .notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
   background: url("../images/promotion_slide_pager_on.png");
 }
+
+main .notice .promotion .swiper-prev,
+main .notice .promotion .swiper-next {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  top: 300px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .notice .promotion .swiper-prev:hover,
+main .notice .promotion .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main .notice .promotion .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+
+main .notice .promotion .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
 /*# sourceMappingURL=style.css.map */
