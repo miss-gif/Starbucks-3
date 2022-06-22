@@ -978,4 +978,99 @@ main .awards .inner .swiper-prev {
 main .awards .inner .swiper-next {
   right: -100px;
 }
+
+footer {
+  background-color: #272727;
+  border: 1px solid #333;
+}
+
+footer .inner {
+  padding: 40px 0 60px 0;
+}
+
+footer .inner .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .inner .menu li {
+  position: relative;
+}
+
+footer .inner .menu li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+
+footer .inner .menu li:last-child::before {
+  display: none;
+}
+
+footer .inner .menu li a {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+  display: block;
+}
+
+footer .inner .menu li a.green {
+  color: #669900;
+}
+
+footer .inner .btnGroup {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .inner .btnGroup .btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+footer .inner .btnGroup .btn:last-child {
+  margin-right: 0;
+}
+
+footer .inner .info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer .inner .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+footer .inner .info span:last-child {
+  margin-right: 0;
+}
+
+footer .inner .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+footer .inner .logo {
+  margin: 30px auto 0;
+}
 /*# sourceMappingURL=style.css.map */
