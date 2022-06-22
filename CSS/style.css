@@ -732,4 +732,104 @@ main .reserveCoffee .inner .product {
   top: 0;
   right: 0;
 }
+
+main .pickYourFavorite {
+  background-image: url(../images/favorite_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .pickYourFavorite .inner {
+  padding: 110px 0;
+}
+
+main .pickYourFavorite .inner .textGroup {
+  margin-left: 100px;
+  width: 362px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .pickYourFavorite .inner .textGroup .title {
+  margin-bottom: 40px;
+}
+
+main .pickYourFavorite .inner .textGroup .description {
+  margin-bottom: 40px;
+}
+
+main .reserveStore {
+  background-image: url(../images/reserve_store_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .reserveStore .inner {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .reserveStore .inner .medal {
+  width: 334px;
+  height: 334px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+main .reserveStore .inner .medal .front,
+main .reserveStore .inner .medal .back {
+  position: absolute;
+  width: 334px;
+  height: 334px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .reserveStore .inner .medal .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+main .reserveStore .inner .medal .back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+main .reserveStore .inner .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+main .reserveStore .inner .medal:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+main .reserveStore .inner .medal:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
 /*# sourceMappingURL=style.css.map */

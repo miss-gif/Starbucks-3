@@ -237,6 +237,7 @@ header {
 }
 
 main {
+  // section
   .visual {
     margin-top: 120px;
     background-image: url("../images/visual_bg.jpg");
@@ -283,6 +284,7 @@ main {
       opacity: 0;
     }
   }
+  // section
   .notice {
     .noticeLine {
       position: relative;
@@ -453,6 +455,7 @@ main {
       height: 0;
     }
   }
+  // section
   .rewards {
     position: relative;
     .bg-left {
@@ -494,6 +497,7 @@ main {
       }
     }
   }
+  // section
   .youtube {
     position: relative;
     height: 700px;
@@ -545,6 +549,7 @@ main {
       }
     }
   }
+  // section
   .seasonProduct {
     background-image: url("../images/season_product_bg.jpg");
     .inner {
@@ -569,6 +574,7 @@ main {
       }
     }
   }
+  // section
   .reserveCoffee {
     background-image: url("../images/reserve_bg.jpg");
     .inner {
@@ -587,6 +593,81 @@ main {
         position: absolute;
         top: 0;
         right: 0;
+      }
+    }
+  }
+  // section
+  .pickYourFavorite {
+    background-image: url(../images/favorite_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; // 뷰포트 고정
+    background-size: cover;
+    .inner {
+      padding: 110px 0;
+      .textGroup {
+        margin-left: 100px;
+        width: 362px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .title {
+          margin-bottom: 40px;
+        }
+        .description {
+          margin-bottom: 40px;
+        }
+        .more {
+          .btn {
+          }
+        }
+      }
+    }
+  }
+  // section
+  .reserveStore {
+    background-image: url(../images/reserve_store_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .inner {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .medal {
+        width: 334px;
+        height: 334px;
+        perspective: 600px;
+        .front,
+        .back {
+          position: absolute;
+          width: 334px;
+          height: 334px;
+          backface-visibility: hidden;
+          transition: 1s;
+        }
+        .front {
+          transform: rotateY(0deg);
+        }
+        .back {
+          transform: rotateY(-180deg);
+          .btn {
+            position: absolute;
+            top: 240px;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+        &:hover .front {
+          transform: rotateY(180deg);
+        }
+        &:hover .back {
+          transform: rotateY(0deg);
+        }
       }
     }
   }
