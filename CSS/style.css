@@ -74,6 +74,48 @@ body {
   background-color: #fff;
 }
 
+.back-to-position {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.back-to-position.to-right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.back-to-position.to-left {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.show .back-to-position.delay-0 {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.show .back-to-position.delay-2 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.show .back-to-position.delay-3 {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -831,5 +873,56 @@ main .reserveStore .inner .medal:hover .front {
 main .reserveStore .inner .medal:hover .back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+main .findStore {
+  background-image: url("../images/find_store_bg.jpg");
+}
+
+main .findStore .inner {
+  height: 400px;
+}
+
+main .findStore .inner .texture1 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+
+main .findStore .inner .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .findStore .inner .picture {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+main .findStore .inner .picture1 {
+  top: -60px;
+  left: 0;
+}
+
+main .findStore .inner .picture2 {
+  top: 150px;
+  left: 250px;
+}
+
+main .findStore .inner .textGroup {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+
+main .findStore .inner .textGroup .title {
+  margin-bottom: 20px;
+}
+
+main .findStore .inner .textGroup .description {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
