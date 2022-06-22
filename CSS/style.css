@@ -4,7 +4,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
-  height: 3000px;
 }
 
 .inner {
@@ -662,5 +661,75 @@ main .youtube .youtubeCover {
   height: 100%;
   background-image: url("../images/video_cover_pattern.png");
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .youtube .inner {
+  height: 700px;
+}
+
+main .youtube .inner .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+main .youtube .inner .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150;
+}
+
+main .seasonProduct {
+  background-image: url("../images/season_product_bg.jpg");
+}
+
+main .seasonProduct .inner {
+  height: 400px;
+}
+
+main .seasonProduct .inner .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+
+main .seasonProduct .inner .textGroup {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+
+main .seasonProduct .inner .textGroup .title {
+  margin-bottom: 10px;
+}
+
+main .seasonProduct .inner .textGroup .description {
+  margin-bottom: 15px;
+}
+
+main .reserveCoffee {
+  background-image: url("../images/reserve_bg.jpg");
+}
+
+main .reserveCoffee .inner {
+  height: 400px;
+}
+
+main .reserveCoffee .inner .reserveLogo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+main .reserveCoffee .inner .textGroup {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+
+main .reserveCoffee .inner .product {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

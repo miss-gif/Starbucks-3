@@ -4,7 +4,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
-  height: 3000px;
 }
 
 .inner {
@@ -531,6 +530,64 @@ main {
       height: 100%;
       background-image: url("../images/video_cover_pattern.png");
       background-color: rgba(0, 0, 0, 0.3);
+    }
+    .inner {
+      height: 700px;
+      .floating1 {
+        position: absolute;
+        top: 50px;
+        left: 0;
+      }
+      .floating2 {
+        position: absolute;
+        top: 350px;
+        left: 150;
+      }
+    }
+  }
+  .seasonProduct {
+    background-image: url("../images/season_product_bg.jpg");
+    .inner {
+      height: 400px;
+      .floating3 {
+        position: absolute;
+        top: -200px;
+        right: 0;
+      }
+      .textGroup {
+        position: absolute;
+        top: 110px;
+        right: 100px;
+        .title {
+          margin-bottom: 10px;
+        }
+        .description {
+          margin-bottom: 15px;
+        }
+        .more {
+        }
+      }
+    }
+  }
+  .reserveCoffee {
+    background-image: url("../images/reserve_bg.jpg");
+    .inner {
+      height: 400px;
+      .reserveLogo {
+        position: absolute;
+        top: 110px;
+        left: 0;
+      }
+      .textGroup {
+        position: absolute;
+        top: 124px;
+        left: 208px;
+      }
+      .product {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
     }
   }
 }
